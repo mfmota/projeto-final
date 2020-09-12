@@ -1,0 +1,129 @@
+html,body{
+    margin: 0;
+}
+header{
+background-color: rgb(22, 56, 110);
+width: 100%;
+height:60px ;
+position: fixed;
+color: white;
+z-index: 5;
+}
+#logo{
+    position:absolute;
+    float: left;
+    margin-left:5%;
+    width:150px ;
+    padding-top: 2px;
+}
+#menu{
+    float:right;
+    margin-right: 5% ;
+    list-style:none;
+    margin-top:0px;
+    color:white
+}
+li{
+    float:left;
+    padding:20 35 20 10;
+}
+li:hover{
+    background-color: rgb(180, 180, 255);
+}
+a:link, a:visited {
+	text-decoration: none;
+   color:white
+}
+a:hover {
+	text-decoration: none; 
+	color: white;    
+}
+a:active {
+	text-decoration: none
+	}
+#img_fundo {
+    background-image:url("fundo.jpg");    
+    text-align: center;
+    width: 100%;
+    height: 100%;
+ }
+#titulo{
+    color:white;
+    padding-top: 20%;
+    font-size:60px;
+    text-shadow:2px 2px rgb(91, 91, 255) ;
+}
+#subtitulo{
+    color:rgb(255, 255, 255);
+    padding-top: 10px;
+    font-size:30px;
+}
+#botao{
+    border:2px solid black;
+padding:10px 10px 10px 10px;
+font-size:20px;
+color:white;
+}
+p{
+    text-align: justify;
+}
+.icone{
+    width:60px;
+}
+.destaque{
+    background-color:rgb(244, 244, 255);
+    
+}
+section{
+    padding:20px;
+   float: left;
+}
+
+.coluna{
+    float: left;
+padding:0 5%;
+position:relative;
+}
+.um{
+    width:40%;  
+}
+.tres{
+    width: 29%;
+    padding: 0 2%;
+}
+.obj{
+width:15%;
+}
+
+
+.centralizado{text-align: center;}
+
+.imglista{
+    width: 50%;
+}
+footer{
+    background-color: rgb(120, 139, 167) ;
+    float:left;
+    width:100%;
+}
+
+@media all and (max-width: 760px){
+    #menu{
+        visibility: hidden; }  
+   #logomenor{
+    width: 100%;
+    position:relative;
+    text-align-last: center;
+    padding:0px;}
+
+   #logo{
+    margin-left: 0px;
+    transform: translateX(-0%);}
+
+  .coluna, .um, .tres, .obj{
+    display: block;
+    width:80%;
+    padding:0;
+    margin: 10px auto;
+    float: none;}
+}
